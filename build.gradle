@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    jcenter()
+}
+
+test {
+    useJUnitPlatform()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13'
+    testImplementation 'io.rest-assured:rest-assured:4.4.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.9.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+}
